@@ -1,0 +1,30 @@
+@keyframes load {
+	0% {opacity: 0.1}
+	100% {opacity: 1.0}
+}
+
+html {
+	padding: 0px;
+	margin: 0px;
+}
+
+table {
+	text-align: center;
+	padding: 1em;
+	font-size: 3em;
+}
+
+
+#timeleft{
+	animation: load 0.2s linear;
+	margin-left: 30%;
+	margin-top: 10%;
+	width: 48em;
+	height: 20em;
+	background-color: rgba(125,0, 200, 0.7);
+	border-radius: 2em;
+	text-align: center;
+	
+
+}
+
