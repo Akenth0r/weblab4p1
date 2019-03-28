@@ -7,10 +7,10 @@ function outDate(DOM_obj){
 	var minutes = seconds/60;
 	var hours = minutes/60;
 	
-	var daysleft = Math.round(hours / 24)
-	var hoursleft = Math.round(hours % 24);
-	var minutesleft = Math.round(minutes % 60);
-	var secondsleft = Math.round(seconds % 60);
+	var daysleft = Math.floor(hours / 24)
+	var hoursleft = Math.floor(hours % 24);
+	var minutesleft = Math.floor(minutes % 60);
+	var secondsleft = Math.floor(seconds % 60);
 	DOM_obj.innerHTML = "<table><tr><th  colspan='4'>До начала 2019 учебного года: </th></tr><tr><td>" +
 	daysleft + "</td><td>" + hoursleft + "</td><td>" + minutesleft + "</td><td>" + secondsleft + " </td></tr>"
 	+ "<tr><td>Дней</td><td> Часов</td><td> Минут</td><td> Секунд</td></tr></table>";
