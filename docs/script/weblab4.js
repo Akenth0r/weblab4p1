@@ -7,7 +7,7 @@ function outDate(DOM_obj){
 	var minutes = seconds/60;
 	var hours = minutes/60;
 	
-	var daysleft = Math.round(hours % 24)
+	var daysleft = Math.round(hours / 24)
 	var hoursleft = Math.round(hours % 24);
 	var minutesleft = Math.round(minutes % 60);
 	var secondsleft = Math.round(seconds % 60);
